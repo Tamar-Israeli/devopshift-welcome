@@ -1,4 +1,4 @@
-image:
+     image:
   tag: 1.19.1
   pullPolicy: IfNotPresent
 
@@ -21,6 +21,9 @@ productpage:
 service:
   type: LoadBalancer
   port: 80
+argoApplication:
+  selfHeal: true
+  prune: true
 
 resources: {}
 
